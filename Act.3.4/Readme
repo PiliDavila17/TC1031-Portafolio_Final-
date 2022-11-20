@@ -1,0 +1,36 @@
+En equipos de tres personas, clona el repositorio en GitHub Links to an external site.y desarrolla la solución del siguiente problema:
+
+A causa del COVID-19, muchas puertos han reducido sus operaciones. Debido a esto, y con el fin de dar un mejor servicio, la compañía naviera "International Seas, Ltd." ha pedido a sus clientes que envíen sus pedidos en orden creciente por prioridades. De esta manera, la compañía podrá determinar el correcto orden de envío de todos los pedidos.
+
+En un principio, esto parecía una buena idea. Si bien, mezclar dos listas ordenadas, A = {a1, a2, ..., an} y B = {b1, b2, ..., bm}, es un trabajo sencillo (recuerdas el algoritmo Mergesort). De hecho, el número de comparaciones a realizar serían (m + n - 1) en el peor caso. Pero, pronto empezaron a llegar más y más listas de los diversos clientes y pronto el departamento de Logística y envío se han visto sobrepasado.
+
+Veamos cuál es el problema. Por ejemplo, supongamos que tenemos un conjunto de pedidos de envío {P1, P2, P3, P4, P5} con tamaños {20, 5, 8, 7, 4} respectivamente. Si realizamos las siguientes mezclas:
+
+P1 y P2 ⟶ Z1, serían 20 + 5 - 1 = 24 comparaciones.
+Z1 y P3 ⟶ Z2, serían 24 + 8 - 1 = 31 comparaciones.
+Z2 y P4 ⟶ Z3, serían 31 + 7 - 1 = 37 comparaciones.
+Z3 y P5, serían 37 + 4 - 1 = 40 comparaciones.
+Lo que nos da un total de 132 comparaciones.
+
+Desarrolla una solución que, dada un conjunto de pedidos y sus tamaños, calcule el menor número de comparaciones posibles.
+
+Entrada
+La primera línea de entrada contiene, N, el número de listas. En la siguiente línea encontrarás N números enteros separados por espacios que indican los tamaños de las listas.
+
+Salida
+Despliega el menor número de operaciones posibles.
+
+Ejemplo de entrada
+6
+20 5 8 20 7 4
+
+Ejemplo de salida
+147
+
+Para probar tu implementación, compila tu programa con el comando:
+
+g++ -std=c++11 main.cpp -o app
+Posteriormente, prueba con cada uno de los archivos de entrada de prueba que encontrarás en este repositorio (input1.txt, input2.txt, input3.txt, input4.txt). Los resultados que debes obtener se encuentran en los archivos llamados output1.txt, output1.txt, output1.txt y output1.txt. Para realizar las pruebas, puedes usar las siguientes líneas de código. Por ejemplo, si queremos probar con el archivo de prueba "input1.txt".
+
+./app < input1.txt > mysolution1.txt diff mysolution1.txt output1.txt
+Si el segundo comando no tenga ninguna salida, sabrás que los resultados que obtuviste son los esperados. Recuerda actualizar tu repositorio (git push) cuando hayas terminado tu implementación.
