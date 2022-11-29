@@ -1,0 +1,20 @@
+16
+Alexandria Algeciras
+Algeciras Ambarli
+Ambarli Antwerp
+Alexandria Balboa
+Balboa Bandar
+Bandar Barcelona
+Antwerp Bremen
+Bremen Busan
+Algeciras Cai_Mep
+Cai_Mep Callao
+Ambarli Cartagena
+Barcelona Callao
+Cai_Mep Cartagena
+Callao Charleston
+Cartagena Charleston
+Charleston Busan
+2
+Cai_Mep 2
+Cai_Mep 3
